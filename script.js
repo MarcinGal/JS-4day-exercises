@@ -1,7 +1,16 @@
 
-const makeCat = () => ({
-        makeSound: () => console.log('Meow!')
-    })
+class Cat {
+    constructor() {
+        this.sound = 'Meoww!';
+    }
+    makeSound() { console.log(this.sound) };
+    changeSound(sound) {this.sound = sound };
+}
 
-const cat = makeCat();
+const cat = new Cat()
+
+cat.makeSound()
+
+cat.changeSound('Kłaczek')
+
 cat.makeSound()
