@@ -1,28 +1,24 @@
 
-// class Cat {
-//     constructor() {
-//         this.sound = 'Meoww!';
-//     }
-//     makeSound() { console.log(this.sound) };
-//     changeSound(sound) {this.sound = sound };
-// }
 
-// const cat = new Cat()
+class Calculator {
+    constructor() {
+       this.a = 0;
+       this.b = 0;
+    }
+    inputFirst(a) { this.a = a }
+    inputSecond(b) { this.b = b }
+    add() { console.log(this.a + this.b) }
+    subtract() { console.log(this.a - this.b) }
+    multiply() { console.log(this.a * this.b) }
+    divide() { console.log(this.a / this.b) }
+}
 
-// cat.makeSound()
+const calc = new Calculator()
 
-// cat.changeSound('Kłaczek')
+calc.inputFirst(2)
+calc.inputSecond(3)
 
-// cat.makeSound()
-
-function Cat(){this.sound = 'Meoww!'};
-Cat.prototype.makeSound = function(){ console.log(this.sound) };
-Cat.prototype.changeSound= function(sound) {this.sound = sound };
-
-const cat = new Cat;
-
-cat.makeSound()
-
-cat.changeSound('Kłaczek')
-
-cat.makeSound()
+calc.add()
+calc.subtract()
+calc.multiply()
+calc.divide()
